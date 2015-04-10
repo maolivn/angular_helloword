@@ -2,8 +2,9 @@
 <html lang="en" ng-app="blogApp">
 <head>
     <title>AngularJS Hello World</title>
-    <meta name="viewport" content="width=device- width,initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="resources/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="resources/bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet"/>
     <link href="css/style.css" rel="stylesheet"/>
@@ -18,6 +19,8 @@
     <script src="js/services.js"></script>
 </head>
 <body>
-<div ng-view></div>
+<nav class="navbar navbar-inverse" role="navigation" ng-include="'template/menu.html'"></nav>
+<div ng-view class="container" role="main">
+</div>
 </body>
 </html>
